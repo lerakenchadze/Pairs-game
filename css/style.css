@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);/*так можно тоже стилизоввать сеткой*/
+  gap: 20px;
+  padding: 40px 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  padding: 30px;
+  background-color: rgb(92, 230, 147);
+  font-size: 0x;
+  color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: rgb(174, 232, 197);
+}
+
+.card:active {
+  background-color: rgb(17, 146, 69);
+}
+
+.open {
+  font-size: 64px;
+  color: blue;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.open:hover {
+  background-color: aqua;
+}
+
+.open:active {
+  background-color: aqua;
+}
+
+.coincidence {
+  font-size: 64px;
+  color: blue;
+  background-color: rgb(167, 255, 255);
+  cursor: pointer;
+}
+
+.coincidence:hover {
+  background-color: rgb(167, 255, 255);
+}
+
+.coincidence:active {
+  background-color: rgb(167, 255, 255);
+}
+
+.btn {
+  padding: 20px 50px;
+}
